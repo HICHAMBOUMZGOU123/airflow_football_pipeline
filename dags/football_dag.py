@@ -4,9 +4,8 @@ from datetime import datetime, timedelta
 import requests
 import pandas as pd
 import sqlite3
-
-# ⚠️ Remplace par ta vraie clé API
-API_KEY = "cf61f67281118649bd622fb79a86a4f8"
+import os
+API_KEY = os.getenv("API_FOOTBALL_KEY")
 
 headers = {
     "x-rapidapi-host": "v3.football.api-sports.io",
